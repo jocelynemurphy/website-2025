@@ -52,23 +52,47 @@ export default function CommunityPartnerships() {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <h1>Community Partnerships</h1>
-      {Object.entries(communityPartnerships).map(
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        {Object.entries(communityPartnerships).map(
+          ([name, { partner, description, date, link }]) => (
+            <div
+              key={name}
+              className="flex flex-col gap-2 p-4 border rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300]"
+            >
+              <h3 className="text-lg font-semibold">{name}</h3>
+              <p>
+                Partner:{" "}
+                <a href={link} className="text-blue-500 hover:underline">
+                  {partner}
+                </a>
+              </p>
+              <p>{date}</p>
+              <p className="hidden">{description}</p>
+            </div>
+          )
+        )}
+      </div>
+      {/* {Object.entries(communityPartnerships).map(
         ([name, { partner, description, date, link }]) => (
-          <div key={name} className="flex flex-col gap-2">
-            <h3>{name}</h3>
-            <p>
-              Partner:{" "}
-              <a href={link} className="text-blue-500 hover:underline">
-                {partner}
-              </a>
-            </p>
-            <p>{date}</p>
-            <p>{description}</p>
-          </div>
+        
+
+
+        //   <div key={name} className="flex flex-col gap-2">
+        //     <h3>{name}</h3>
+        //     <p>
+        //       Partner:{" "}
+        //       <a href={link} className="text-blue-500 hover:underline">
+        //         {partner}
+        //       </a>
+        //     </p>
+        //     <p>{date}</p>
+        //     <p>{description}</p>
+        //   </div>
         )
-      )}
+      )} */}
     </div>
   );
 }

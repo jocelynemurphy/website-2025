@@ -8,7 +8,7 @@ interface CommunityLeadershipItem {
 
 export default function Major() {
   const communityLeadership: Record<string, CommunityLeadershipItem> = {
-    "Co-Founder & CEO | Wygo": {
+    Wygo: {
       role: "Founder & CEO",
       organization: "Wygo",
       period: "Sep 2023 — Present",
@@ -19,7 +19,7 @@ export default function Major() {
       ],
       link: "#",
     },
-    "Co-founder, Host | UW Startups, Socratica": {
+    "Socratica & UW Startups": {
       role: "Co-founder, Host",
       organization: "UW Startups, Socratica",
       period: "Mar 2021 — Present",
@@ -31,14 +31,14 @@ export default function Major() {
       ],
       link: "#",
     },
-    "VP Internal | UW Blueprint": {
+    "UW Blueprint": {
       role: "VP Internal",
       organization: "UW Blueprint",
       period: "Jan 2022 — Apr 2022",
       achievements: ["la la la"],
       link: "#",
     },
-    "Chair, Volunteer | SVP Teens Waterloo Region": {
+    "SVP Teens Waterloo Region": {
       role: "Chair, Volunteer",
       organization: "SVP Teens Waterloo Region",
       period: "Sept 2017 — June 2020",
@@ -52,7 +52,7 @@ export default function Major() {
 
   return (
     <div>
-      <h1>Things I've spent a ton of time thinking about:</h1>
+      <h1>I've spent a lot of time building:</h1>
       {Object.entries(communityLeadership).map(
         ([title, { period, achievements, link }]) => (
           <div key={title} className="flex flex-col gap-2 mb-6">

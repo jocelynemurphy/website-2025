@@ -13,7 +13,7 @@ export default function Writing() {
     "Sensitivity-to-the-world": {
       year: 2023,
       subtitle:
-        "on 'giftedness,' ADHD, and the storytelling of sensory sensitivity",
+        "On 'giftedness,' ADHD, and the storytelling of sensory sensitivity",
       link: "#",
     },
     "World-building IRL": {
@@ -30,17 +30,22 @@ export default function Writing() {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <h1>Writing</h1>
       {Object.entries(writings).map(([name, { year, subtitle, link }]) => (
-        <div key={name} className="flex flex-col gap-2">
-          <h3>
-            <a href={link} className="text-blue-500 hover:underline">
-              {name}
-            </a>
-          </h3>
-          {subtitle && <p>{subtitle}</p>}
-          <p>{year}</p>
+        <div key={name} className="flex flex-row justify-between">
+          <div className="flex lg:flex-row flex-col">
+            <h3>
+              <a href={link} className="text-blue-500 hover:underline">
+                {name}
+              </a>
+            </h3>
+
+            {subtitle && (
+              <p className="lg:pl-4 flex items-start lg:mr-16">{subtitle}</p>
+            )}
+          </div>
+          <p className="mt-1">{year}</p>
         </div>
       ))}
     </div>

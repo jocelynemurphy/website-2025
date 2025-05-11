@@ -8,16 +8,16 @@ interface WorkExperience {
 
 export default function WorkExperienceComponent() {
   const workExperience: Record<string, WorkExperience> = {
-    "Founder & CEO | Wygo": {
-      period: "Sep 2023 — Present",
-      description:
-        "Founded a company to accelerate the work of community builders.",
-      achievements: [
-        "Running 4 initial events, generating $1000 in revenue",
-        "Conducted extensive research on community-based solutions to the loneliness epidemic in 8 cities across North America and Europe over the course of 4 Entrepreneurship Co-op Terms",
-      ],
-      link: "#",
-    },
+    // "Founder & CEO | Wygo": {
+    //   period: "Sep 2023 — Present",
+    //   description:
+    //     "Founded a company to accelerate the work of community builders.",
+    //   achievements: [
+    //     "Running 4 initial events, generating $1000 in revenue",
+    //     "Conducted extensive research on community-based solutions to the loneliness epidemic in 8 cities across North America and Europe over the course of 4 Entrepreneurship Co-op Terms",
+    //   ],
+    //   link: "#",
+    // },
     "Product Manager | Culdesac": {
       period: "Jan 2023 — Apr 2023",
       tech: "Looker, Notion, Linear, Figma",
@@ -56,17 +56,20 @@ export default function WorkExperienceComponent() {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <h1>Work Experience</h1>
       {Object.entries(workExperience).map(
         ([title, { period, tech, description, achievements, link }]) => (
           <div key={title} className="flex flex-col gap-2 mb-6">
-            <h3>
-              <a href={link} className="text-blue-500 hover:underline">
-                {title}
-              </a>
-            </h3>
-            <p>{period}</p>
+            <div className="flex justify-between">
+              <h3>
+                <a href={link} className="text-blue-500 hover:underline">
+                  {title}
+                </a>
+              </h3>
+              <p>{period}</p>
+            </div>
+
             {tech && <p className="italic">{tech}</p>}
             {description && <p>{description}</p>}
             {achievements && (
