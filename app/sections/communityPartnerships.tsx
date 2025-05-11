@@ -5,49 +5,49 @@ export default function CommunityPartnerships() {
       description:
         "Mentored youth through volunteer work at Soccer/STEM Camps and tutoring, recruited UW students for Adventure4Change partnerships, and helped students access SHAD and university scholarship opportunities.",
       date: "2019 - 2025",
-      link: "#",
+      link: "https://adventure4change.org/",
     },
     "Builder Sundays": {
       partner: "Shopify",
       description:
         "Supported Shopify in its launch of Builder Sundays (a coworking community in Toronto).",
       date: "2024",
-      link: "#",
+      link: "https://www.shopify.com/ca",
     },
     "The Kitchen": {
       partner: "Communitech",
       description:
         "Collaborated with Communitech to launch a collaborative space for students to work on independent projects.",
       date: "2024",
-      link: "#",
+      link: "https://communitech.ca/",
     },
     "The Dungeon": {
       partner: "Velocity",
       description:
         "Pitched Velocity on a low-barrier space for students to host events. Scoped the project, designed the interior, helped hire students to manage the space and paint a mural.",
       date: "2024",
-      link: "#",
+      link: "https://www.velocityincubator.com/",
     },
     "Douze à Deux": {
-      partner: "McGill's Building21",
+      partner: "Building21",
       description:
-        "Founded a Montreal Socratica chapter, collaborating with McGill's Building21.",
+        "Founded a Montreal coworking community, collaborating with McGill's Building21.",
       date: "2023",
-      link: "#",
+      link: "https://www.building21.ca/",
     },
     "Shad Campus Club": {
       partner: "Shad",
       description:
         "Hired by Shad to coach Shad Campus Club Leaders through establishing a presence on various university campuses.",
       date: "2023",
-      link: "#",
+      link: "https://www.shad.ca/",
     },
-    "Startup Barn": {
-      partner: "University of Waterloo",
+    " Strategy & Event Partnerships": {
+      partner: "Builders Club, Formerly EigenSpace",
       description:
         "Worked closely with founder to build an ecosystem of relationships between University of Waterloo alumni & students.",
       date: "2022",
-      link: "#",
+      link: "https://startupbarn.ca/",
     },
   };
 

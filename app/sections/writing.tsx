@@ -3,29 +3,29 @@ export default function Writing() {
     "Jocelyne Murphy on the year tech showed up": {
       year: 2024,
       subtitle: null,
-      link: "#",
+      link: "https://betakit.com/jocelyne-murphy-on-the-year-tech-showed-up/",
     },
     "The Four Circles of Belonging": {
       year: 2024,
       subtitle: "A tactical guide for finding meaningful connection",
-      link: "#",
+      link: "https://boxx.substack.com/p/loneliness-the-four-circles-of-belonging",
     },
     "Sensitivity-to-the-world": {
       year: 2023,
       subtitle:
         "On 'giftedness,' ADHD, and the storytelling of sensory sensitivity",
-      link: "#",
+      link: "https://boxx.substack.com/p/sensitivity-to-the-world",
     },
     "World-building IRL": {
       year: 2023,
       subtitle:
         "Engineering high-quality communities that don't break at scale",
-      link: "#",
+      link: "https://boxx.substack.com/p/world-building-irl",
     },
     "Why I do what I do": {
       year: 2022,
       subtitle: null,
-      link: "#",
+      link: "https://jocelynemurphy.github.io/whyidowhatido/",
     },
   };
 

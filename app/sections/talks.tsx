@@ -12,28 +12,28 @@ export default function AdvocacyTalks() {
       subtitle: "BetaKit Town Hall",
       description:
         "Spoke to 500+ senior tech leaders, spurring a wave of action to support young Canadian engineers and entrepreneurs.",
-      link: "#",
+      link: "https://youtu.be/kvNMyruc4pA?si=Tb_R_8vTRLIYFQkD&t=1621",
     },
     "Conversations with next-gen talent": {
       year: 2024,
       subtitle: "Waterloo Innovation Summit 2024",
       description:
         "Interviewed by UW President & Vice Chancellor Vivek Goel about UW Startups, Socratica, and the future of work.",
-      link: "#",
+      link: "https://youtu.be/OdJEzOWYEnA?si=Nnid4Ce4ygilXvDA&t=7508",
     },
     "Wygo, entrepreneurship, and the loneliness epidemic": {
       year: 2024,
       subtitle: "Socratica Symposium",
       description:
         "Shared the story of starting my company with an audience of 700 attendees.",
-      link: "#",
+      link: "https://www.youtube.com/live/xQFHZhmiJuA?t=6698s",
     },
     "Social Engineering 101 (How to not be cringe)": {
       year: 2023,
       subtitle: "Contrary Capital Venture Partner Retreat",
       description:
         "A talk on designing inclusive engineering and entrepreneurial communities in Austin, Texas.",
-      link: "#",
+      link: "https://www.youtube.com/watch?v=657X8w9Hy50&t=1s",
     },
     // "What's Next, What Now Panel": {
     //   year: null,

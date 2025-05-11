@@ -17,7 +17,7 @@ export default function Major() {
         "Running 4 initial events, generating $1000 in revenue",
         "Conducted extensive research on community-based solutions to the loneliness epidemic in 8 cities across North America and Europe over the course of 4 Entrepreneurship Co-op Terms",
       ],
-      link: "#",
+      link: "https://wygo.world/",
     },
     "Socratica & UW Startups": {
       role: "Co-founder, Host",
@@ -29,14 +29,14 @@ export default function Major() {
         "Directly raised over $70,000 to support the growth of the organization",
         "Built relationships with leaders from Shopify, Communitech, Shad, The Accelerator Centre, Catalyst137, Velocity, Conrad, Contrary Capital, 1517 Fund, JAM Music Network, BetaKit, and the University of Waterloo",
       ],
-      link: "#",
+      link: "https://www.socratica.info/about",
     },
     "UW Blueprint": {
       role: "VP Internal",
       organization: "UW Blueprint",
       period: "Jan 2022 — Apr 2022",
       achievements: ["la la la"],
-      link: "#",
+      link: "https://uwblueprint.org/",
     },
     "SVP Teens Waterloo Region": {
       role: "Chair, Volunteer",
@@ -46,7 +46,7 @@ export default function Major() {
         "Fundraised and awarded over $22,000 to local charities while driving unprecedented recruitment success from 8 to 85 members in one month",
         "Built a website, hired an employee, and wrote guide for SVP International",
       ],
-      link: "#",
+      link: "https://svpteens.org/",
     },
   };
 
@@ -57,7 +57,11 @@ export default function Major() {
         ([title, { period, achievements, link }]) => (
           <div key={title} className="flex flex-col gap-2 mb-6">
             <h3>
-              <a href={link} className="text-blue-500 hover:underline">
+              <a
+                href={link}
+                target="_blank"
+                className="text-blue-500 hover:underline"
+              >
                 {title}
               </a>
             </h3>

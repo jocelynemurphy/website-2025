@@ -25,7 +25,7 @@ export default function WorkExperienceComponent() {
         "Designed a system for collecting, displaying, and reviewing mobility data",
         "Identified opportunities for the engineering team to scale effectively by conducting extensive research on human-centered design",
       ],
-      link: "#",
+      link: "https://culdesac.com/",
     },
     "Software Engineer | Clearco": {
       period: "May 2022 — Jul 2022",
@@ -33,7 +33,7 @@ export default function WorkExperienceComponent() {
       achievements: [
         "Introduced 53 changes in underwriting, increasing customer revenue recognized by ~1% ($625M), speeding up re-deployment of funds",
       ],
-      link: "#",
+      link: "https://clear.co/",
     },
     "Software Developer | Miovision": {
       period: "Sep 2021 — Dec 2021",
@@ -42,7 +42,7 @@ export default function WorkExperienceComponent() {
         "Rebuilt the frontend of Miovision's core video processing application with over 85% test coverage, delivering 3 weeks ahead of schedule",
         "Added new functionality to REST APIs in the Validator, Controller, and Manager layers of the backend",
       ],
-      link: "#",
+      link: "https://miovision.com/",
     },
     "Software Developer | Auvik Networks": {
       period: "Jan 2021 — Apr 2021",
@@ -51,7 +51,7 @@ export default function WorkExperienceComponent() {
         "Queried and presented data in Looker dashboards, providing insight into customer networks",
         "Increased speed of pipeline tests by 30% by upgrading test framework",
       ],
-      link: "#",
+      link: "https://www.auvik.com/",
     },
   };
 

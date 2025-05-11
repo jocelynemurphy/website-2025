@@ -8,37 +8,37 @@ export default function Fellowships() {
       year: "2025",
       description:
         "Recognizes a graduating student who with determination and passion has worked to make the Waterloo Engineering community a better place and will take that same energy to a career focused on improving the human condition.",
-      link: "#",
+      link: "https://uwaterloo.ca/engineering/pearl-sullivan-emerging-global-leaders-award",
     },
     "Adam Weiss Community Leadership Award": {
       year: "2025",
       description:
         "Awarded to students in the Science faculty for academic excellence, leadership involvement, and a demonstrated interest in entrepreneurship",
-      link: "#",
+      link: "https://uwaterloo.ca/student-awards-financial-aid/awards/adam-weiss-community-leadership-award",
     },
     "1st Place, Change Engine Pitch Competition": {
       year: "2025",
       description:
         "Awarded to students who can turn advocacy ideas into meaningful projects that impact change on campus",
-      link: "#",
+      link: "https://wusa.ca/the-change-engine-recap-empowering-student-innovation/",
     },
     "TD Scholarship for Community Leadership": {
       year: "2020 — 2025",
       description:
         "Recognizes 20 Canadian students who have demonstrated outstanding dedication to their community",
-      link: "#",
+      link: "https://www.td.com/ca/en/personal-banking/solutions/student-banking/community-leadership-scholarship-for-canadians",
     },
     "Finalist, Velocity Pitch Competition": {
       year: "2024",
       description:
         "Competed against over 100 student teams in a multi-week pitch competition",
-      link: "#",
+      link: "https://www.velocityincubator.com/news/velocity-pitch-competition-winter-2024-finalists",
     },
     "Norman Esch Enterprise Co-op Awards": {
       year: "2023 — 2024 ",
       description:
         "Awarded for winning the entrepreneurship co-op pitch competition in F2023 and S2024",
-      link: "#",
+      link: "https://uwaterloo.ca/conrad-school-entrepreneurship-business/undergraduate-students/awards",
     },
     // "UW Alumni Women in Technology Entrance Scholarship": {
     //   year: "2020",
@@ -56,7 +56,7 @@ export default function Fellowships() {
       year: "2019 — 2020",
       description:
         "National competition that supports youth leaders (Aged 15-29) as they address priorities in their communities",
-      link: "#",
+      link: "https://communityfoundations.ca/rbc-flcc-stories-social-venture-partners-teens-svp-teens-is-creating-a-powerful-network-of-teams-in-k-w/",
     },
   };
 
@@ -65,19 +65,19 @@ export default function Fellowships() {
       year: "2023 — Present",
       description:
         "For young technologists to seek out difficult conversations, collaborate, and push each other to do good in the world.",
-      link: "#",
+      link: "https://joininteract.com/",
     },
     "Contrary Capital Venture Scout": {
       year: "2021 — 2023",
       description:
         "Exceptional students from US and Canadian universities are on-campus resources for founders, evaluate startups, and gain investing experience.",
-      link: "#",
+      link: "https://www.contrary.com/",
     },
     "RippleX Fellowship": {
       year: "2022",
       description:
         "Students from underrepresented backgrounds are taught the intricacies of startup building and venture capital.",
-      link: "#",
+      link: "https://www.fellowship.rippleventures.com/",
     },
   };
 
@@ -151,7 +151,7 @@ export default function Fellowships() {
         <div className="w-full lg:w-1/2">
           {Object.entries(fellowships).map(
             ([name, { year, description, link }]) => (
-              <div key={name} className="flex flex-col">
+              <div key={name} className="flex flex-col pt-2">
                 <div className="flex flex-row justify-between">
                   <h3>
                     <a href={link} className="text-blue-500 hover:underline">
@@ -169,7 +169,7 @@ export default function Fellowships() {
         </div>
         <div className="w-fill lg:w-1/2">
           {Object.entries(awards).map(([name, { year, link }]) => (
-            <div key={name} className="flex flex-col mb-2 ">
+            <div key={name} className="flex flex-col mb-2 pt-1">
               <div className="flex flex-row justify-between text-balance">
                 <h3>
                   <a href={link} className="text-blue-500 hover:underline">
