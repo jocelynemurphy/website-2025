@@ -154,7 +154,11 @@ export default function Fellowships() {
               <div key={name} className="flex flex-col pt-2">
                 <div className="flex flex-row justify-between">
                   <h3>
-                    <a href={link} className="text-blue-500 hover:underline">
+                    <a
+                      href={link}
+                      target="_blank"
+                      className="text-blue-500 hover:underline"
+                    >
                       {name}
                     </a>
                   </h3>
@@ -172,7 +176,11 @@ export default function Fellowships() {
             <div key={name} className="flex flex-col mb-2 pt-1">
               <div className="flex flex-row justify-between text-balance">
                 <h3>
-                  <a href={link} className="text-blue-500 hover:underline">
+                  <a
+                    href={link}
+                    target="_blank"
+                    className="text-blue-500 hover:underline"
+                  >
                     {name}
                   </a>
                 </h3>

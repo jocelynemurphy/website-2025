@@ -36,7 +36,11 @@ export default function Writing() {
         <div key={name} className="flex flex-row justify-between">
           <div className="flex lg:flex-row flex-col">
             <h3>
-              <a href={link} className="text-blue-500 hover:underline">
+              <a
+                href={link}
+                target="_blank"
+                className="text-blue-500 hover:underline"
+              >
                 {name}
               </a>
             </h3>

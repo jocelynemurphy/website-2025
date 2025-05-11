@@ -2,8 +2,7 @@ import { BookHeart, GithubIcon, Linkedin } from "lucide-react";
 
 export default function Intro() {
   return (
-    <div>
-      {" "}
+    <div className="pb-14">
       <h2 className="my-4 tracking-widest">🌻 🌏 🛴🌿🍄 🌃 🪩🥂💯🦕🏒💥</h2>
       <h1>Hey, nice to meet you!! I'm Joss. 😁 </h1>
       <p>

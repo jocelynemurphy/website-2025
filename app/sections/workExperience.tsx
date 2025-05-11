@@ -63,7 +63,11 @@ export default function WorkExperienceComponent() {
           <div key={title} className="flex flex-col gap-2 mb-6">
             <div className="flex justify-between">
               <h3>
-                <a href={link} className="text-blue-500 hover:underline">
+                <a
+                  href={link}
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
                   {title}
                 </a>
               </h3>

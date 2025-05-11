@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AdvocacyTalks() {
   const advocacyTalks = {
     // "Worldbuilding IRL, Landing Tech Internships Panel": {
@@ -55,11 +57,22 @@ export default function AdvocacyTalks() {
                 key={name}
                 className="flex flex-col gap-2 bg-blue-100 rounded-xl hover:shadow-lg hover:scale-102 transition-transform duration-200 ease-in-out hover:rotate-1"
               >
-                <div className="h-[200px] bg-blue-300 rounded-t-xl"></div>
+                <div className="h-[200px] bg-blue-200 rounded-t-xl">
+                  <Image
+                    src="/photos/BK-Townhall-Panel.jpg"
+                    alt="BK town hall photo"
+                    height={200}
+                    width={200}
+                  />
+                </div>
                 <div className="p-4 flex flex-col justify-between">
                   <div className="flex flex-col justify-start">
                     <h3>
-                      <a href={link} className="text-blue-500 hover:underline">
+                      <a
+                        href={link}
+                        target="_blank"
+                        className="text-blue-500 hover:underline"
+                      >
                         {name}
                       </a>
                     </h3>

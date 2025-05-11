@@ -65,7 +65,11 @@ export default function CommunityPartnerships() {
               <h3 className="text-lg font-semibold">{name}</h3>
               <p>
                 Partner:{" "}
-                <a href={link} className="text-blue-500 hover:underline">
+                <a
+                  href={link}
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
                   {partner}
                 </a>
               </p>
