@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import CourseCatalog from "./courseSection";
+import CourseCatalog from "./courseCatalog";
 
 export default function Fellowships() {
   const awards = {
