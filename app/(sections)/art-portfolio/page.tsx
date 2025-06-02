@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import Footer from "../footer";
 import HomeNav from "../homenav";
 
@@ -647,324 +646,47 @@ const photos: Photo[] = [
     title: "Workspace setup",
   },
 
-  // Engineering
-  {
-    type: "eng",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/eng-arduino.jpeg",
-    title: "Arduino project",
-  },
-  {
-    type: "eng",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/eng-dashboard.png",
-    title: "Dashboard interface",
-  },
-  {
-    type: "eng",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/eng-electricity.png",
-    title: "Electricity concept",
-  },
-  {
-    type: "eng",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/eng-floorlight.png",
-    title: "Floor light design",
-  },
-  {
-    type: "eng",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/eng-haptisteer.png",
-    title: "Haptisteer project",
-  },
-  {
-    type: "eng",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/eng-haptisteer2.png",
-    title: "Haptisteer project 2",
-  },
-  {
-    type: "eng",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/eng-roundadoubtdiorama.png",
-    title: "Roundabout diorama",
-  },
-  {
-    type: "eng",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/eng-roundadoubtsigns.jpeg",
-    title: "Roundabout signs",
-  },
-
-  // Baby Photos
-  {
-    type: "babyphoto",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/babyphoto-butt.JPG",
-    title: "Baby photo - butt",
-  },
-  {
-    type: "babyphoto",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/babyphoto-cake.JPG",
-    title: "Baby photo - cake",
-  },
-  {
-    type: "babyphoto",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/babyphoto-doublefist.JPG",
-    title: "Baby photo - double fist",
-  },
-  {
-    type: "babyphoto",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/babyphoto-elmo.JPG",
-    title: "Baby photo - with Elmo",
-  },
-  {
-    type: "babyphoto",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/babyphoto-feathers.JPG",
-    title: "Baby photo - with feathers",
-  },
-  {
-    type: "babyphoto",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/babyphoto-shrek.jpg",
-    title: "Baby photo - Shrek themed",
-  },
-
-  // Headshots
-  {
-    type: "headshot",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/headshot-1.JPG",
-    title: "Professional headshot 1",
-  },
-  {
-    type: "headshot",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/headshot-2.JPG",
-    title: "Professional headshot 2",
-  },
-  {
-    type: "headshot",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/headshot-3.JPG",
-    title: "Professional headshot 3",
-  },
-  {
-    type: "headshot",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/headshot-4.JPG",
-    title: "Professional headshot 4",
-  },
-  {
-    type: "headshot",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/headshot-5.JPG",
-    title: "Professional headshot 5",
-  },
-  {
-    type: "headshot",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/headshot-6.JPG",
-    title: "Professional headshot 6",
-  },
-
-  // Media
-  {
-    type: "media",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/media-betakit.jpg",
-    title: "BetaKit media feature",
-  },
-  {
-    type: "media",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/media-vivek.jpeg",
-    title: "Vivek media photo",
-  },
-
   // Silly
   {
     type: "silly",
     link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/silly-dodgeball.png",
     title: "Silly dodgeball scene",
   },
-
-  // Videos
-  {
-    type: "video",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/djo!.mov",
-    title: "DJO video",
-  },
-  {
-    type: "video",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/dramatic.mov",
-    title: "Dramatic video",
-  },
-  {
-    type: "video",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/video-dancer.mov",
-    title: "Dancer video",
-  },
-  {
-    type: "video",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/video-europe.mov",
-    title: "Europe travel video",
-  },
-  {
-    type: "video",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/video-finalreelwaterloof22.mov",
-    title: "Final reel Waterloo F22",
-  },
-  {
-    type: "video",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/video-montreal.mov",
-    title: "Montreal video",
-  },
-  {
-    type: "video",
-    link: "https://personalwebsitecontent.s3.us-east-2.amazonaws.com/video-waterloooo.mov",
-    title: "Waterloo video",
-  },
 ];
 
 export default function ArtPortfolio() {
-  const [showSketches, setShowSketches] = useState(true);
-  const [showArt, setShowArt] = useState(true);
-  const [showDudes, setShowDudes] = useState(true);
-  const [showEng, setShowEng] = useState(true);
-  const [showBabyphoto, setShowBabyphoto] = useState(true);
-  const [showHeadshot, setShowHeadshot] = useState(true);
-  const [showMedia, setShowMedia] = useState(true);
-  const [showSilly, setShowSilly] = useState(true);
-  const [showVideo, setShowVideo] = useState(true);
-
-  const filteredPhotos = photos.filter((photo) => {
-    if (photo.type === "sketch" && showSketches) return true;
-    if (photo.type === "art" && showArt) return true;
-    if (photo.type === "dudes" && showDudes) return true;
-    if (photo.type === "eng" && showEng) return true;
-    if (photo.type === "babyphoto" && showBabyphoto) return true;
-    if (photo.type === "headshot" && showHeadshot) return true;
-    if (photo.type === "media" && showMedia) return true;
-    if (photo.type === "silly" && showSilly) return true;
-    if (photo.type === "video" && showVideo) return true;
-    return false;
-  });
+  const sections = ["art", "dudes", "sketch", "silly"];
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <HomeNav />
 
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start max-w-6xl">
+      <main className="flex flex-col gap-[32px] row-start-2 items-start max-w-6xl">
         <h1 className="text-3xl font-bold text-center mb-8">Art Portfolio</h1>
 
-        {/* Filter Switches */}
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-4 justify-center mb-8">
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showSketches}
-              onChange={(e) => setShowSketches(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Sketches</span>
-          </label>
+        {sections.map((type) => {
+          const sectionPhotos = photos.filter((photo) => photo.type === type);
+          if (!sectionPhotos.length) return null;
 
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showArt}
-              onChange={(e) => setShowArt(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Art</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showDudes}
-              onChange={(e) => setShowDudes(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Dudes</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showEng}
-              onChange={(e) => setShowEng(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Engineering</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showBabyphoto}
-              onChange={(e) => setShowBabyphoto(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Baby Photos</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showHeadshot}
-              onChange={(e) => setShowHeadshot(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Headshots</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showMedia}
-              onChange={(e) => setShowMedia(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Media</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showSilly}
-              onChange={(e) => setShowSilly(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Silly</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={showVideo}
-              onChange={(e) => setShowVideo(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm">Videos</span>
-          </label>
-        </div>
-
-        {/* Photo Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-          {filteredPhotos.map((photo, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
-            >
-              <div className="relative aspect-square">
-                <Image
-                  src={photo.link}
-                  alt={photo.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <div className="p-4">
-                <p className="text-sm text-gray-600 mb-1 capitalize">
-                  {photo.type}
-                </p>
-                <p className="text-sm font-medium">{photo.title}</p>
+          return (
+            <div key={type} className="w-full mb-12">
+              <h2 className="text-2xl font-semibold mb-6 capitalize">{type}</h2>
+              <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
+                {sectionPhotos.map((photo, i) => (
+                  <div key={i} className="break-inside-avoid mb-6">
+                    <Image
+                      src={photo.link}
+                      alt={photo.title}
+                      width={800}
+                      height={600}
+                      className="w-auto h-auto"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
-
-        {filteredPhotos.length === 0 && (
-          <div className="text-center text-gray-500 mt-8">
-            No photos to display. Please select at least one filter.
-          </div>
-        )}
+          );
+        })}
       </main>
 
       <Footer />
