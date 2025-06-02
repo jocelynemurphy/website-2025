@@ -15,7 +15,7 @@ const AWSVideoPlayer: React.FC<AWSVideoPlayerProps> = ({
   videoUrl,
   title = "",
   width = "w-full",
-  height = "h-3/4",
+  height = "h-full",
   autoPlay = false,
   controls = true,
   muted = false,
@@ -51,8 +51,12 @@ const AWSVideoPlayer: React.FC<AWSVideoPlayerProps> = ({
       </video>
 
       {title && (
-        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
-          <h3 className="text-sm font-medium truncate">{title}</h3>
+        <div className="absolute top-0 left-1 right-0 transition duration-200 bg-opacity-0 opacity-0 hover:opacity-100 hover:bg-opacity-50 text-white p-2 rounded-b-lg">
+          <div className="group overflow-hidden whitespace-nowrap">
+            <h3 className="text-sm font-medium inline-block transition-transform duration-[4s] ease-linear group-hover:-translate-x-full pr-4">
+              {title}
+            </h3>
+          </div>
         </div>
       )}
     </div>
