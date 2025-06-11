@@ -20,14 +20,14 @@ export default function Intro() {
       </div>
       {/* <h2 className="my-4 tracking-widest">🌻 🌏 🛴🌿🍄 🌃 🪩🥂💯🦕🏒💥</h2> */}
       <h1>{"Welcome!! I'm Joss. 😁"} </h1>
-      <p>
+      {/* <p>
         As a
         ✨writer-software-developer-community-builder-systems-design-engineer✨,
         most of my brainpower is spent thinking about how we can design and
         iterate on social, economic, digital, and physical systems to help
         humans (individually AND collectively) live our best lives.
       </p>
-      <br />
+      <br /> */}
       <p>
         {`I'm currently spending most of my time building `}
         <a href="https://wygo.world/" target="_blank" className="text-blue-500">
