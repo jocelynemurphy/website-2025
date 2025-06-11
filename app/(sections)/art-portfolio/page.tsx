@@ -7,14 +7,22 @@ import Footer from "../footer";
 import HomeNav from "../homenav";
 import artPieces from "./art";
 
+// Define the type for photo objects
+interface Photo {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+}
+
 export default function ArtPortfolio() {
-  const [photos, setPhotos] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [photos, setPhotos] = useState<Photo[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const loadImages = async () => {
       const imagePromises = Object.entries(artPieces).map(([, artwork]) => {
-        return new Promise((resolve) => {
+        return new Promise<Photo>((resolve) => {
           const img = new Image();
           img.onload = () => {
             resolve({
