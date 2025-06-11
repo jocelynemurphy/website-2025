@@ -19,7 +19,7 @@ export default function Intro() {
         ))}
       </div>
       {/* <h2 className="my-4 tracking-widest">🌻 🌏 🛴🌿🍄 🌃 🪩🥂💯🦕🏒💥</h2> */}
-      <h1>Welcome!! I'm Joss. 😁 </h1>
+      <h1>{"Welcome!! I'm Joss. 😁"} </h1>
       <p>
         As a
         ✨writer-software-developer-community-builder-systems-design-engineer✨,
@@ -29,7 +29,7 @@ export default function Intro() {
       </p>
       <br />
       <p>
-        I'm currently spending most of my time building{" "}
+        {`I'm currently spending most of my time building`}
         <a href="https://wygo.world/" target="_blank" className="text-blue-500">
           Wygo
         </a>{" "}
@@ -39,10 +39,10 @@ export default function Intro() {
       </p>
       <br />
       <p>
-        We will be great friends if you're kind, nerdy, and ambitious 😁 (in
+        {`We will be great friends if you're kind, nerdy, and ambitious 😁 (in
         that order!). Bonus points if you have a track record of creating
         opportunities for the people around you and understand how important it
-        is to centre inclusion and diverse representation in everything you do.
+        is to centre inclusion and diverse representation in everything you do.`}
       </p>
       <br />
       <div className="flex gap-4 items-center flex-col sm:flex-row">

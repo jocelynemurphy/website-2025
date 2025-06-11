@@ -13,7 +13,7 @@ export default function ArtPortfolio() {
 
   useEffect(() => {
     const loadImages = async () => {
-      const imagePromises = Object.entries(artPieces).map(([key, artwork]) => {
+      const imagePromises = Object.entries(artPieces).map(([, artwork]) => {
         return new Promise((resolve) => {
           const img = new Image();
           img.onload = () => {

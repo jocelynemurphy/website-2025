@@ -52,7 +52,7 @@ export default function Major() {
 
   return (
     <div>
-      <h1>I've spent a lot of time building:</h1>
+      <h1>{"I've spent a lot of time building:"}</h1>
       {Object.entries(communityLeadership).map(
         ([title, { period, achievements, link }]) => (
           <div key={title} className="flex flex-col gap-2 mb-6">
