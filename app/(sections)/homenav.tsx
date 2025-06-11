@@ -5,7 +5,7 @@ export default function HomeNav() {
   return (
     <Link
       href="/"
-      className={` bg-white rounded-full fixed top-4 left-4 z-50 flex items-center justify-center w-10 h-10  hover:transition-transform hover:rotate-8 hover:scale-115 duration-200 ease-in-out`}
+      className={` bg-white/50 hover:bg-white rounded-full fixed top-4 left-4 z-50 flex items-center justify-center w-10 h-10  hover:transition-transform hover:rotate-8 hover:scale-115 duration-200 ease-in-out`}
     >
       <h1> ✰ </h1>
     </Link>

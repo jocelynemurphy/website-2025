@@ -31,13 +31,13 @@ export default function Major() {
       ],
       link: "https://www.socratica.info/about",
     },
-    "UW Blueprint": {
-      role: "VP Internal",
-      organization: "UW Blueprint",
-      period: "Jan 2022 — Apr 2022",
-      achievements: ["la la la"],
-      link: "https://uwblueprint.org/",
-    },
+    // "UW Blueprint": {
+    //   role: "VP Internal",
+    //   organization: "UW Blueprint",
+    //   period: "Jan 2022 — Apr 2022",
+    //   achievements: ["la la la"],
+    //   link: "https://uwblueprint.org/",
+    // },
     "SVP Teens Waterloo Region": {
       role: "Chair, Volunteer",
       organization: "SVP Teens Waterloo Region",

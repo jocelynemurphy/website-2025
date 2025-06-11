@@ -91,12 +91,12 @@ export default function Fellowships() {
     <div>
       <h1>Education, Fellowships & Supporters </h1>
       <div
-        className="bg-amber-100 p-4 rounded-xl flex flex-col  hover:shadow-lg hover:scale-102 transition-transform duration-200 ease-in-out"
+        className="bg-amber-100 p-4 mt-2 rounded-xl flex flex-col  hover:shadow-lg hover:scale-102 transition-transform duration-200 ease-in-out"
         onClick={toggleDrawer}
       >
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row justify-between">
           <h3>University of Waterloo</h3>
-          <p className="p-1"> September 2020 - April 2025</p>
+          <p className="italic"> September 2020 - April 2025</p>
         </div>
         <div className="">
           <p> B.A. Sc. Systems Design Engineering</p>
@@ -136,7 +136,7 @@ export default function Fellowships() {
           >
             <CourseCatalog />{" "}
           </div>
-          <div
+          {/* <div
             style={{
               transform: isDrawerOpen ? "translateY(0)" : "translateY(-40px)",
             }}
@@ -144,7 +144,7 @@ export default function Fellowships() {
           >
             <h3 className="">Capstone Design Project</h3>
             <p>*Insert Description Here*</p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-col lg:flex-row mt-8 gap-8">
@@ -162,7 +162,7 @@ export default function Fellowships() {
                       {name}
                     </a>
                   </h3>
-                  <p className="mt-1 ">{year}</p>
+                  <p className="mt-1 italic hidden ">{year}</p>
                 </div>
                 <p className="lg:pl-4 flex text-balance items-start lg:w-5/6">
                   {description}
@@ -184,7 +184,7 @@ export default function Fellowships() {
                     {name}
                   </a>
                 </h3>
-                <p className=" mt-1">{year}</p>
+                <p className="hidden italic mt-1">{year}</p>
               </div>
               {/* <p className="lg:pl-4 flex items-start lg:mr-16">{description}</p> */}
             </div>

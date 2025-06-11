@@ -1,3 +1,4 @@
+"use client";
 import Footer from "../footer";
 import HomeNav from "../homenav";
 import AWSVideoPlayer from "../videoPlayer";
@@ -59,8 +60,14 @@ export default function PhotoVideo() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <HomeNav />
+      <h3
+        className="bg-white/50 hover:bg-white rounded-full w-44 fixed top-4 right-4 z-50 flex items-center justify-center h-10 hover:transition-transform hover:rotate-3 hover:scale-112 duration-200 ease-in-out cursor-pointer"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        Video Portfolio
+      </h3>
       <main className="flex flex-col gap-[20px] row-start-2 items-start max-w-6xl">
-        <h1 className="flex "> Videos! </h1>
+        {/* <h1 className="flex "> Videos! </h1> */}
         <h2 className="w-fill"> Favourites </h2>
         <p>
           The type of project that can only come to life when there&apos;s{" "}

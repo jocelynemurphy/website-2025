@@ -1,52 +1,50 @@
+import { Earth, GithubIcon, Linkedin } from "lucide-react";
 import Image from "next/image";
+
 export default function Footer() {
   return (
     <>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.linkedin.com/in/jmurphyy/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Example
+          <Linkedin />
+          LinkedIn
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://github.com/jocelynemurphy"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Example
+          <GithubIcon />
+          Github
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://wygo.world"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            alt="wygo-logo"
+            height={22}
+            width={22}
+            src="https://personalwebsitecontent.s3.us-east-2.amazonaws.com/wygo-logo-dark-thick.svg"
           />
-          Example →
+          Wygo
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://jocelynemurphy.github.io/whyidowhatido"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Earth />
+          Why I do what I do
         </a>
       </footer>
     </>

@@ -37,7 +37,7 @@ const AWSVideoPlayer: React.FC<AWSVideoPlayerProps> = ({
         preload="metadata"
       >
         <p className="text-gray-600 p-4">
-          Your browser doesn't support HTML5 video. Here is a{" "}
+          {"Your browser doesn't support HTML5 video. "}
           <a
             href={videoUrl}
             className="text-blue-500 hover:text-blue-700 underline"

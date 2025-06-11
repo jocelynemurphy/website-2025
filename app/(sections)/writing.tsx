@@ -1,10 +1,10 @@
 export default function Writing() {
   const writings = {
-    "Jocelyne Murphy on the year tech showed up": {
-      year: 2024,
-      subtitle: null,
-      link: "https://betakit.com/jocelyne-murphy-on-the-year-tech-showed-up/",
-    },
+    // "Jocelyne Murphy on the year tech showed up": {
+    //   year: 2024,
+    //   subtitle: null,
+    //   link: "https://betakit.com/jocelyne-murphy-on-the-year-tech-showed-up/",
+    // },
     "The Four Circles of Belonging": {
       year: 2024,
       subtitle: "A tactical guide for finding meaningful connection",

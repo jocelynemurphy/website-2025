@@ -8,30 +8,31 @@ interface WorkExperience {
 
 export default function WorkExperienceComponent() {
   const workExperience: Record<string, WorkExperience> = {
-    // "Founder & CEO | Wygo": {
-    //   period: "Sep 2023 — Present",
-    //   description:
-    //     "Founded a company to accelerate the work of community builders.",
-    //   achievements: [
-    //     "Running 4 initial events, generating $1000 in revenue",
-    //     "Conducted extensive research on community-based solutions to the loneliness epidemic in 8 cities across North America and Europe over the course of 4 Entrepreneurship Co-op Terms",
-    //   ],
-    //   link: "#",
-    // },
+    "Founder & CEO | Wygo": {
+      period: "Sep 2023 — Present",
+      description:
+        "Founded a company to accelerate the work of community builders.",
+      achievements: [
+        "Founded a company to accelerate the work of community builders.",
+        "Researched community-based solutions to the loneliness epidemic in 8 cities across North America and Europe",
+        "Ran several initial events, generating $2000+ in revenue through proprietary community-building software platform",
+      ],
+      link: "https://wygo.world/",
+    },
     "Product Manager | Culdesac": {
       period: "Jan 2023 — Apr 2023",
       tech: "Looker, Notion, Linear, Figma",
       achievements: [
         "Designed a system for collecting, displaying, and reviewing mobility data",
-        "Identified opportunities for the engineering team to scale effectively by conducting extensive research on human-centered design",
+        "Identified opportunities for the engineering team to scale effectively by conducting extensive research on human-centered technology",
       ],
       link: "https://culdesac.com/",
     },
     "Software Engineer | Clearco": {
       period: "May 2022 — Jul 2022",
-      tech: "TypeScript, Node.js, SQL, Docker, Prisma/SQLite Data, Shortcut, NestJS",
+      tech: "TypeScript, Node.js, SQL, Docker, Periscope Data, Shortcut, NestJS",
       achievements: [
-        "Introduced 53 changes in underwriting, increasing customer revenue recognized by ~1% ($625M), speeding up re-deployment of funds",
+        "Introduced 53 currencies in underwriting, increasing customer revenue recognized by ~1% ($625M), speeding up re-deployment of funds",
       ],
       link: "https://clear.co/",
     },
@@ -48,7 +49,7 @@ export default function WorkExperienceComponent() {
       period: "Jan 2021 — Apr 2021",
       tech: "TypeScript, React, Jira, Looker, Python",
       achievements: [
-        "Queried and presented data in Looker dashboards, providing insight into customer networks",
+        "Queried and presented data in Looker dashboards, providing insight into customer behavior and improving the efficiency of customer support",
         "Increased speed of pipeline tests by 30% by upgrading test framework",
       ],
       link: "https://www.auvik.com/",
@@ -61,7 +62,7 @@ export default function WorkExperienceComponent() {
       {Object.entries(workExperience).map(
         ([title, { period, tech, description, achievements, link }]) => (
           <div key={title} className="flex flex-col gap-2 mb-6">
-            <div className="flex justify-between">
+            <div className="flex flex-col sm:flex-row justify-between">
               <h3>
                 <a
                   href={link}
@@ -71,7 +72,7 @@ export default function WorkExperienceComponent() {
                   {title}
                 </a>
               </h3>
-              <p>{period}</p>
+              <p className="italic">{period}</p>
             </div>
 
             {tech && <p className="italic">{tech}</p>}
