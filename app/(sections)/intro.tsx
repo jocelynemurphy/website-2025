@@ -29,7 +29,7 @@ export default function Intro() {
       </p>
       <br />
       <p>
-        {`I'm currently spending most of my time building`}
+        {`I'm currently spending most of my time building `}
         <a href="https://wygo.world/" target="_blank" className="text-blue-500">
           Wygo
         </a>{" "}
